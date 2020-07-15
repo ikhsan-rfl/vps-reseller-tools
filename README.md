@@ -12,7 +12,7 @@ Script ini berfungsi untuk menendang user yang multi login khusus untuk OpenSSH
 **trial-jam**
 
 Script ini berfungsi untuk membuat user trial berdasarkan jam
-
+(Pengaturan port script ini menggunakan script kangarif)
 
 ## **DOWNLOAD**
 
