@@ -29,3 +29,6 @@ Script ini berfungsi untuk membuat user trial berdasarkan jam
 >wget https://raw.githubusercontent.com/ikhsan-rfl/vps-reseller-tools/master/trial-jam -O /usr/bin/trial-jam && chmod +x /usr/bin/trial-jam
 
 #### **Jika Sudah Selesai Silahkan Ketik Sesuai Nama Scriptnya**
+
+### PERTANYAAN DAN SARAN
+Telegram : https://t.me/ikhsan_rfl
