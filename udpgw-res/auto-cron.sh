@@ -21,4 +21,3 @@ fi
 service cron restart
 sleep 0.5
 printf -- "\n\n---------------AUTO RESTART TELAH TERPASANG---------------\n\n"
-exit
