@@ -8,13 +8,13 @@ else
 fi
 if [ -f /usr/local/bin/badvpn-udpgw ]
 then
-	echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7200 /usr/local/bin/badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500 --client-socket-sndbuf 65535" > /etc/cron.d/badvpn-auto && echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7300 /usr/local/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500 --client-socket-sndbuf 65535" >> /etc/cron.d/badvpn-auto
+	echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7200 /usr/local/bin/badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500 --client-socket-sndbuf 65535" > /etc/cron.d/badvpn-auto && echo "0 */$time * * * root sleep 1 && screen -dmS udp7300 /usr/local/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500 --client-socket-sndbuf 65535" >> /etc/cron.d/badvpn-auto
 else
 	printf -- ""
 fi
 if [ -f /usr/bin/badvpn-udpgw ]                                                              
 then                                                                                               
-	echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7200 /usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500 --client-socket-sndbuf 65535" > /etc/cron.d/badvpn-auto && echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7300 /usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500 --client-socket-sndbuf 65535" >> /etc/cron.d/badvpn-auto                                       
+	echo "0 */$time * * * root pkill badvpn-udpgw && screen -dmS udp7200 /usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500 --client-socket-sndbuf 65535" > /etc/cron.d/badvpn-auto && echo "0 */$time * * * root sleep 1 && screen -dmS udp7300 /usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500 --client-socket-sndbuf 65535" >> /etc/cron.d/badvpn-auto                                       
 else
 	 printf -- ""
 fi
